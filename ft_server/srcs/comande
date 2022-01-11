@@ -1,0 +1,7 @@
+//créé une image
+docker build -t "nom_image" .
+//demarrer le conteneur
+docker run -it -d -p 80:80 -p 443:443 --name "nom_conteneur" "nom_image"
+//entrer dans le conteneur
+docker exec -it "nom_conteneur" bash
+
